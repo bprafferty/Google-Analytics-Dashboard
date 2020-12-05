@@ -15,11 +15,14 @@ def main():
     st.markdown('''
     # Google Analytics Dashboard
     ### Created by [Brian Rafferty](https://www.brianrafferty.net/)
+    </br>
     Dashboard for Google Analytics data recorded by the Google Store.
+    </br>
     Data provided by Google BigQuery database: google_analytics_sample
+    </br>
     Inspiration for project: [Kaggle](https://www.kaggle.com/c/ga-customer-revenue-prediction/data?select=train.csv).
     ''')
-    st.markdown('## In modern business, the 80/20 rule denotes how only a small percentage of customers produce most of the revenue. Due to this phenomenon, businesses face a daily challenge to better understand their customers.')
+    st.markdown('## The 80/20 rule denotes that for the majority of companies only a small percentage of customers produce most of the revenue. Due to this phenomenon, businesses face a daily challenge to better understand their customers.')
     st.image('Google-Store.jpg', caption='Image from Claudiu Sima', use_column_width=True)
     st.markdown('## The goal of this dashboard is to highlight revenue indicators for the Google Store, and help the marketing team discover insights to leverage untapped markets.')
     st.write('')
