@@ -164,7 +164,7 @@ def date_panel(df):
     b.line(x=non_zero.index, y=non_zero['non zero count'], line_width=3, color='#DB4437')
     
     date_text = """
-<br/>The time series data displays that Google Store should invest in ad campaigns during the holiday season to better target paying customers. It is interesting to see how the amount of Google Store page views drops between September 2016 and January 2017, but the amount of purchases during that period remains the same.
+<br/>The time series data displays that Google Store should invest in ad campaigns during the holiday season to better target paying customers. It is interesting to see how the amount of Google Store page views drop between September 2016 and January 2017, but the amount of purchases during that period remains the same.
     """
     column = bokeh.layouts.Column(
         children=[a, b, _markdown(date_text)], sizing_mode="stretch_width"
