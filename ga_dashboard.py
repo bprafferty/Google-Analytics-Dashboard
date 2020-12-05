@@ -16,7 +16,8 @@ def main():
     # Google Analytics Dashboard
     ### Created by [Brian Rafferty](https://www.brianrafferty.net/)
     Dashboard for Google Analytics data recorded by the Google Store.
-    Data provided by [Kaggle](https://www.kaggle.com/c/ga-customer-revenue-prediction/data?select=train.csv).
+    Data provided by Google BigQuery database: google_analytics_sample
+    Inspiration for project: [Kaggle](https://www.kaggle.com/c/ga-customer-revenue-prediction/data?select=train.csv).
     ''')
     st.markdown('## In modern business, the 80/20 rule denotes how only a small percentage of customers produce most of the revenue. Due to this phenomenon, businesses face a daily challenge to better understand their customers.')
     st.image('Google-Store.jpg', caption='Image from Claudiu Sima', use_column_width=True)
