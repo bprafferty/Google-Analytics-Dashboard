@@ -25,7 +25,7 @@ def main():
 
     @st.cache
     def load_data():
-        data = pd.read_csv(DATA_PATH, nrows=10000)
+        data = pd.read_csv(DATA_PATH, nrows=10000, index_col=0)
         return data
 
     raw_df = load_data()
@@ -42,7 +42,8 @@ def main():
         data = pd.read_csv(DATA_PATH, 
                      converters={column: json.loads for column in json_cols}, 
                      dtype={'fullVisitorId': 'str'},
-                     nrows=10000)
+                     nrows=10000,
+                     index_col=0)
         
         for col in json_cols:
             flattened_col_df = json_normalize(data[col])
