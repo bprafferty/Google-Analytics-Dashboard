@@ -16,12 +16,15 @@ def main():
     # Google Analytics Dashboard
     ### Created by [Brian Rafferty](https://www.brianrafferty.net/)
     ''')
-    st.write('Dashboard for Google Analytics data recorded by the Google Store.')
     st.write('')
+    st.write('Dashboard for Google Analytics data recorded by the Google Store.')
     st.write('Data provided by Google BigQuery database: google_analytics_sample')
     st.write('Inspiration for project: [Kaggle](https://www.kaggle.com/c/ga-customer-revenue-prediction/data?select=train.csv).')
     
-    st.markdown('## The 80/20 rule denotes that for the majority of companies only a small percentage of customers produce most of the revenue. Due to this phenomenon, businesses face a daily challenge to better understand their customers.')
+    st.markdown('''
+    ### The 80/20 rule defines: for the majority of companies, only a small percentage of customers produce most of their revenue. 
+    ### Due to this phenomenon, businesses face a daily challenge to better understand the unique demands of their customers. By analyzing eCommerce data gathered with Google Analytics, companies can pinpoint customer behavior and formulate new business strategies.
+    ''')
     st.image('Google-Store.jpg', caption='Image from Claudiu Sima', use_column_width=True)
     st.markdown('## The goal of this dashboard is to highlight revenue indicators for the Google Store, and help the marketing team discover insights to leverage untapped markets.')
     st.write('')
@@ -68,7 +71,7 @@ def main():
         st.write(clean_df.head())
         st.write('Now each column that contained JSON is expanded into a flattened format. We can now begin data analysis!')
     
-    if st.checkbox('Click to visualize the correlation of the dataset.'):
+    if st.checkbox('Click to visualize the correlation of the dataset'):
         correlation = clean_df.corr()
         st.write(correlation)
         
